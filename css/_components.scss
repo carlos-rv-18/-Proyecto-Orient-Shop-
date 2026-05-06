@@ -1,0 +1,209 @@
+@use "./base";
+
+.banner {
+    width: 100%;
+    padding: 110px 0;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+    background-position: center center;
+
+        &__tit {
+        width: 100%;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 10px;
+        color: base.$altFontColor;
+    }
+
+    &__sub {
+        width: 100%;
+        margin: 50px auto;
+        font-size: 2rem;
+        color: base.$altFontColor;
+        font-weight: 400;
+    }
+
+}
+
+.side-menu {
+    width: 400px;
+    padding: 30px;
+    background-color: base.$backgroundMain;
+    box-sizing: border-box;
+    height: 100%;
+    box-shadow: base.$menuShadows;
+    border-radius: 0 1rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+  
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+
+            &:hover {
+                scale: 1.2;
+                text-shadow: base.$textShadow;
+                transition: all .15s ease;
+            }
+        }
+    }
+
+    .close-menu {
+        position:absolute;
+        right: 2%;
+        top: 2%;
+        width: 50px;
+        opacity: .6;
+        cursor: pointer;
+    }
+}
+
+.products {
+    width: 80%;
+    margin: 3rem auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+
+    .btn-add {
+        background-color: base.$backgroundMain;
+        color: #000;
+        border: none;
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+        border-radius: .5rem;
+        box-shadow: base.$productShadow;
+        cursor: pointer;
+        
+
+        &:hover {
+            transition: all .15s ease-in-out;
+            background-color: #000;
+            color: #ffffff;
+        }
+    }
+
+    &__item {
+   
+    text-align: center;
+    background-color: base.$backgroundMain;
+    box-shadow: 1px 5px 30px #cbcbcb;
+    padding: .5rem;
+    border-radius: 1rem;
+
+    &-img {
+    width: 200px;
+    margin-bottom: 15px;
+    }
+
+    &-tit {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    }
+
+    &-price {
+    font-weight: 300;
+    font-size: .9rem;
+    }
+    }
+
+
+    
+
+
+}
+
+
+.cart {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100%;
+
+    box-shadow: -15px 10px 22px rgb(0, 0, 0, .2);
+    border-radius: 10px 0 0 0;
+
+    &__tit {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 auto 10px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    }
+
+    &__close {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 50px;
+    opacity: .6;
+    cursor: pointer;
+    }
+
+    
+
+    &__item {
+    border-bottom: 1px solid #545454;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+
+        &-img {
+        width: 60px;
+        cursor: pointer;
+        }
+
+        & > :nth-child(2) {
+        font-size: 10px;
+        font-weight: 500;
+        text-align: center;
+        }
+
+        & .cart__item > :nth-child(3) {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+        text-align: center;
+        }
+
+        & > :last-child {
+        width: 25px;
+        cursor: pointer;
+        opacity: .6;
+        }
+    }
+    
+}

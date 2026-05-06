@@ -1,0 +1,97 @@
+@use "./base";
+
+
+
+
+.header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: base.$backgroundMain;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+
+    &__icon {
+        width: 30px;
+        cursor: pointer;
+        display: inline-block
+    }
+
+    &__img {
+    width: 100px;
+    cursor:pointer
+    }
+
+    &__badge {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+
+    background: red;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 1rem;
+
+    }
+    
+}
+
+.products__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.side-menu {
+
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    transition: base.$transition;
+
+    &.show {
+        left: 0%;
+    }
+}
+
+.cart {
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    transition: base.$transition;
+
+
+    &.show-cart {
+    right: 0%;
+    }
+}
+
+footer {
+    padding: 5rem 5rem ;
+    background-color: base.$footerColor;
+    display: flex;
+    justify-content: space-between;
+
+    & .footer__img {
+    width: 100px;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+        & a {
+            text-decoration: none;
+            color: base.$altFontColor;
+        }
+    }
+}

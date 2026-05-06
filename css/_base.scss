@@ -1,0 +1,21 @@
+$mainFont: 'Segoe UI', 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+$mainFontColor: #545454; 
+$altFontColor: #fff;
+$productShadow: 1px 5px 30px #cbcbcb ;
+$menuShadows: 15px 10px 22px rgb(0, 0, 0, .2);
+$textShadow: 1px 1px 5px #c7c7c7 ;
+$footerColor: #5a5a5a ;
+$backgroundMain: #fff ;
+$transition: all .3s ease ;
+
+
+
+body {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    color: $mainFontColor;
+    font-family: $mainFont;
+    margin: 0;   
+}
+
