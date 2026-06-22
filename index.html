@@ -34,7 +34,7 @@
                 <h3 class="products__item-tit">Orient Bambino</h3>
                 <i class="products__item-price">$4,000.00</i>
 
-                <button class="btn-add" data-id="1">
+                <button class="btn-add" data-id="1" aria-label="Agregar al carrito">
                     +
                 </button>
             </article>
@@ -185,34 +185,91 @@
 
                 -->
               
-            <img class="cart__close" src="icons/close_60dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="ocultar carrito">
+            <img class="cart__close" src="icons/close_60dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="ocultar carrito" aria-label="Cerrar carrito">
         
         
         </section>
 
         <section class="side-menu">
-            <h2> Nuestros relojes</h2>
-            <nav class="menu-list">
-                <a href="">Relojes Diver</a>
-                <a href="">Relojes Casuales</a>
-                <a href="">Relojes de Lujo</a>
-                <a href="">Relojes Clásicos</a>
-                <a href="">De Segunda Mano</a>
+            <h2> Menú lateral</h2>
+            <nav class="menu-list" role="navigation">
+                <a class="nosotros" href="nosotros.html">Nosotros</a>
+                <a class="contacto" href="contacto.html">Contacto</a>
+                <a class="promociones" href="productos.html">Promociones</a>
+                <a class="productos" href="index.html">Productos</a>
             </nav>
 
-            <img class="close-menu" src="icons/close_60dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="ocultar menu">
+            <img class="close-menu" src="icons/close_60dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="ocultar menu" aria-label="Cerrar menú lateral">
 
         </section>
+
+        <section class="formulario">			
+            <h1>Formulario de contacto</h1>
+				<h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nombre" class="colocar_nombre" >Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+								</p>		
+							
+								<p>
+									<label for="website" class="colocar_website">Sitio web
+									</label>
+										<input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+								</p>		
+							
+								<p>
+									<label for="asunto" class="colocar_asunto">Asunto
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+								</p>		
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar" aria-label="Enviar formulario"><p>Enviar</p></button>
+
+								<p class="aviso" role="alert">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+					</form>	
+        </section>
+        
     </main>
 
     <footer>
         
         <img src="img/Orient-Logo.png" alt="Logo Orient" width="200" class="footer__img">
         <nav>
-            <a class="nosotros" href="">Nosotros</a>
-            <a class="contacto" href="">Contacto</a>
-            <a class="promociones" href="">Promociones</a>
-            <a class="productos" href="">Productos</a>
+            <a class="nosotros" href="nosotros.html">Nosotros</a>
+            <a class="contacto" href="contacto.html">Contacto</a>
+            <a class="promociones" href="productos.html">Promociones</a>
+            <a class="productos" href="index.html">Productos</a>
         </nav>
         
     </footer>

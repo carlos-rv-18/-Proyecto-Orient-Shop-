@@ -84,6 +84,17 @@ footer nav a {
   color: #fff;
 }
 
+.historia {
+  width: 90%;
+  margin: 5rem auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
 @media (max-width: 820px) {
   .header {
     padding: 15px;
@@ -177,6 +188,11 @@ footer nav a {
   font-size: 2rem;
   color: #fff;
   font-weight: 400;
+}
+
+.historia__img {
+  width: 70%;
+  border-radius: 2rem;
 }
 
 .side-menu {
@@ -321,4 +337,83 @@ footer nav a {
   width: 25px;
   cursor: pointer;
   opacity: 0.6;
+}
+
+.formulario {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  padding: 30px 0 20px 30px;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+.formulario h1 {
+  font-size: 39px;
+  text-align: left;
+  padding-bottom: 20px;
+  color: #545454;
+}
+.formulario h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+.formulario p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+.formulario label {
+  display: block;
+}
+.formulario span,
+.formulario .obligatorio {
+  color: #545454;
+}
+.formulario .aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+.formulario input,
+.formulario textarea {
+  background-color: #fbfbfb;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: 0;
+  border-color: #97d848;
+}
+.formulario input {
+  width: 408px;
+  height: 40px;
+}
+.formulario textarea {
+  width: 405px;
+  height: 150px;
+  padding-top: 15px;
+}
+.formulario button {
+  width: 420px;
+  height: 45px;
+  margin: 10px 0 20px;
+  padding: 0 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #545454;
+  border: 1px solid #545454;
+  border-radius: 10px;
+}
+.formulario button p {
+  color: #fff;
+  margin: 0;
+}
+.formulario ::-moz-placeholder {
+  color: #a8a8a8;
+}
+.formulario ::placeholder {
+  color: #a8a8a8;
 }/*# sourceMappingURL=main.css.map */
